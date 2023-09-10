@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Keania+One&family=Roboto:ital,wght@0,300;1,300;1,500&display=swap');
+
+/*
+    font-family: 'Keania One', cursive;
+
+    font-family: 'Roboto', sans-serif;
+*/
+
+body {
+    margin: 0px;
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header"
+    "table table quotes"
+    "s1 s1 quotes"
+    "s2 s2 quotes"
+    "s3 s3 quotes"
+    "s4 s4 quotes"
+    "s5 s5 quotes"
+    "s6 s6 quotes"
+    "s7 s7 quotes"
+    "s8 s8 quotes"
+    "s9 s9 quotes"
+    "s10 s10 quotes"
+    "s11 s11 quotes"
+    "s12 s12 quotes"
+    "footer footer footer";
+    grid-gap: 5px 0;
+}
+
+header {
+    grid-area: header;
+    background: #613659;
+    padding: 4px 0;
+    background-image: url('_assets/pics/concert.jpg');
+    height: 300px;
+    background-size: cover;
+    background-position: 40%;
+}
+
+header h1 {
+    transform: translateY(80px);
+    font-family: 'Keania One', cursive;
+    font-size: 75px;
+    color: #fff;
+    text-align: center;
+}
+
+header h2 {
+    transform: translateY(50px);
+    font-family: 'Keania One', cursive;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+table, tr, th, td {
+    border: 1px solid #613659;
+    border-collapse: collapse;
+    padding: .5rem;
+}
+
+thead {
+    background: #613659;
+    color: #fff;
+}
+
+td:nth-of-type(n+2) {
+    text-align: right;
+    background: #d3b1c2;
+}
+
+
+main section {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color:#555;
+}
+
+main section h2 {
+    color:#613659;
+}
+
+.quotes h2 {
+    color: #d3b1c2;
+}
+
+.quotes {
+    grid-area: quotes;
+    background-color:#613659;
+    width: 300px;
+    margin-left: auto;
+    color:#d3b1c2;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 50px;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.table {
+    grid-area: table;
+    margin: 10px;
+    margin-left: 200px;
+    background-size: cover;
+}
+
+.section {
+    margin: 10px;
+    margin-left: 200px;
+    grid-column: span 2;
+}
+
+.s-1 {
+    grid-area: s1;
+}
+
+.s-2 {
+    grid-area: s2;
+}
+
+.s-3 {
+    grid-area: s3;
+}
+
+.s-4 {
+    grid-area: s4;
+}
+
+.s-5 {
+    grid-area: s5;
+}
+
+.s-6 {
+    grid-area: s6;
+}
+
+.s-7 {
+    grid-area: s7;
+}
+
+.s-8 {
+    grid-area: s8;
+}
+
+.s-9 {
+    grid-area: s9;
+}
+
+.s-10 {
+    grid-area: s10;
+}
+
+.s-11 {
+    grid-area: s11;
+}
+
+.s-12 {
+    grid-area: s12;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: right;
+    color: #613659;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+#Rich {
+    padding-top: 20px;
+}
+
+#Dalton #Cindy #Petra {
+    padding-top: 50px;
+}
+
+.img {
+    margin: 10px auto 20px;
+    display: block;
+    width: 50%;
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+li {
+    display: flex;
+    flex-wrap:  wrap;
+}
+
+@media only screen and (max-width: 600px){
+   main {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    }
+
+    header h1 {
+        transform: translateY(30px);
+        font-size: 50px;
+    }
+    header h2 {
+        transform: translateY(30px);
+        font-size: 25px;
+    }
+
+    .quotes {
+        display: block;
+        background-color:#613659;
+        background-size: 600px;
+        margin: auto;
+        color:#d3b1c2;
+        text-align: left;
+        font-size: 15px;
+        line-height: 2;
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+
+    .quotes h2 {
+        margin-left: 25%;
+    }
+
+    .table {
+        margin: 10px;
+    }
+
+    .section {
+        margin-left: 0px;
+        margin: 10px;
+    }
+
+    ul li {
+        margin-right: 20%;
+    }
+}
