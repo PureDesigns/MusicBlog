@@ -4,5 +4,5 @@ This is a small page right now focusing on using a grid system and then flex whe
 What I use on this page:
 - HTML
 - CSS
-  > Display: Grid
+  > Display: Grid,
   > Grid area
